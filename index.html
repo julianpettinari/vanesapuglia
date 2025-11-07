@@ -114,6 +114,24 @@
       color:rgba(255,255,255,0.6);
     }
 
+    /* TikTok link style */
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.9);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .social-link:hover {
+      color: #ff0050; /* color característico de TikTok */
+    }
+    .tiktok-icon {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+
     /* Responsive spacing tweak */
     @media (max-width:420px){
       .card{padding:28px;border-radius:12px}
@@ -126,10 +144,17 @@
     <h1 id="titulo"><span class="title-accent">Sitio bajo construcción</span></h1>
     <p class="lead">Gracias por visitar — estoy trabajando en algo hermoso. Volvé pronto para la presentación del libro <strong>En tus Límites</strong>.</p>
 
-    <div class="meta" aria-hidden="true">
+    <div class="meta" aria-hidden="false">
       <div class="pill">Vanesa Puglia — Autora</div>
       <div class="pill">Próxima publicación</div>
-      <div class="pill">Contacto: <em>vanesa@example.com</em></div>
+      <div class="pill">
+        <a href="https://www.tiktok.com/@cocoa.y.canela" target="_blank" rel="noopener noreferrer" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="tiktok-icon" aria-label="TikTok">
+            <path fill="currentColor" d="M232 96.23v39.11a91.71 91.71 0 0 1-52-16.62v68.28A69 69 0 1 1 111 118v39.34a29.92 29.92 0 1 0 21 28.53V24h48a52 52 0 0 0 52 52Z"/>
+          </svg>
+          <span>@cocoa.y.canela</span>
+        </a>
+      </div>
     </div>
 
     <p class="footer-note">¿Querés que te avise cuando esté listo? Podés dejar tu e-mail en la página de contacto (ejemplo arriba).</p>
