@@ -81,7 +81,22 @@
       backdrop-filter: blur(4px);
     }
 
-    /* subtle animated underline */
+    /* Botón Contactame */
+    .contact-button {
+      display: inline-block;
+      padding: 8px 16px;
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+    .contact-button:hover {
+      background: rgba(255,255,255,0.25);
+    }
+
+    /* Underline animado */
     .title-accent{
       display:inline-block;
       position:relative;
@@ -132,13 +147,14 @@
       flex-shrink: 0;
     }
 
-    /* Responsive spacing tweak */
+    /* Responsive tweak */
     @media (max-width:420px){
       .card{padding:28px;border-radius:12px}
       .meta{gap:8px}
     }
   </style>
 </head>
+
 <body>
   <main class="card" role="main" aria-labelledby="titulo">
     <h1 id="titulo"><span class="title-accent">Sitio bajo construcción</span></h1>
@@ -146,7 +162,14 @@
 
     <div class="meta" aria-hidden="false">
       <div class="pill">Vanesa Puglia — Autora</div>
-      <div class="pill">Próxima publicación</div>
+
+      <!-- Botón Contactame -->
+      <div class="pill">
+        <a href="https://forms.gle/yvYBfjpRuuEXZ9K59" target="_blank" rel="noopener noreferrer" class="contact-button">
+          Contactame
+        </a>
+      </div>
+
       <div class="pill">
         <a href="https://www.tiktok.com/@cocoa.y.canela" target="_blank" rel="noopener noreferrer" class="social-link">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="tiktok-icon" aria-label="TikTok">
@@ -157,7 +180,7 @@
       </div>
     </div>
 
-    <p class="footer-note">¿Querés que te avise cuando esté listo? Podés dejar tu e-mail en la página de contacto (ejemplo arriba).</p>
+    <p class="footer-note">¿Querés que te avise cuando esté listo? Podés dejar tu e-mail en la página de contacto.</p>
   </main>
 </body>
 </html>
