@@ -27,7 +27,7 @@ body::before{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.30;          /* 30% real */
+  opacity: 0.50;          /* 50% real */
   z-index: -2;
   pointer-events: none;
 }
