@@ -1,143 +1,106 @@
 :root{
-    --bg:#050505;
-    --glass: rgba(255,255,255,0.06);
-    --accent: rgba(255,255,255,0.08);
-    --text: #ffffff;
-  }
-  
-  /* Reset simple */
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{height:100%}
-  body{
-    background:
-      radial-gradient(1200px 600px at 10% 10%, rgba(255,255,255,0.02), transparent 10%),
-      linear-gradient(180deg, #070707 0%, #030303 100%);
-    background-color:var(--bg);
-    color:var(--text);
-    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:24px;
-  }
-  
-  .card{
-    width:100%;
-    max-width:880px;
-    text-align:center;
-    padding:40px;
-    border-radius:16px;
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-    box-shadow:
-      0 10px 30px rgba(0,0,0,0.6),
-      inset 0 1px 0 rgba(255,255,255,0.02);
-    backdrop-filter: blur(6px);
-    border: 1px solid var(--glass);
-  }
-  
-  h1{
-    font-size:clamp(28px, 5vw, 44px);
-    letter-spacing: -0.02em;
-    margin-bottom:12px;
-    font-weight:700;
-    line-height:1.04;
-  }
-  
-  p.lead{
-    margin-bottom:20px;
-    color: rgba(255,255,255,0.86);
-    font-weight:500;
-    font-size:clamp(14px, 2.5vw, 18px);
-  }
-  
-  .meta{
-    display:flex;
-    gap:12px;
-    justify-content:center;
-    flex-wrap:wrap;
-    margin-top:18px;
-  }
-  
-  .pill{
-    padding:8px 14px;
-    border-radius:999px;
-    font-size:13px;
-    background:transparent;
-    border:1px solid rgba(255,255,255,0.06);
-    color:rgba(255,255,255,0.9);
-    backdrop-filter: blur(4px);
-  }
-  
-  /* Botón Contactame */
-  .contact-button {
-    display: inline-block;
-    padding: 8px 16px;
-    background: rgba(255,255,255,0.12);
-    color: #fff;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background 0.3s ease;
-  }
-  .contact-button:hover {
-    background: rgba(255,255,255,0.25);
-  }
-  
-  /* Underline animado */
-  .title-accent{
-    display:inline-block;
-    position:relative;
-    padding-bottom:6px;
-  }
-  .title-accent::after{
-    content:"";
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    bottom:0;
-    width:60%;
-    height:4px;
-    border-radius:4px;
-    background: linear-gradient(90deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
-    animation: pulseX 2.6s ease-in-out infinite;
-    opacity:0.9;
-  }
-  
-  @keyframes pulseX{
-    0%{transform:translateX(-50%) scaleX(0.85); opacity:0.6}
-    50%{transform:translateX(-50%) scaleX(1.02); opacity:1}
-    100%{transform:translateX(-50%) scaleX(0.85); opacity:0.6}
-  }
-  
-  /* small footer note */
-  .footer-note{
-    margin-top:20px;
-    font-size:13px;
-    color:rgba(255,255,255,0.6);
-  }
-  
-  /* TikTok link style */
-  .social-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: rgba(255,255,255,0.9);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  .social-link:hover {
-    color: #ff0050; /* color característico de TikTok */
-  }
-  .tiktok-icon {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-  }
-  
-  /* Responsive tweak */
-  @media (max-width:420px){
-    .card{padding:28px;border-radius:12px}
-    .meta{gap:8px}
-  }
+  --bg:#050505;
+  --glass: rgba(255,255,255,0.06);
+  --text:#fff;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+
+body{
+  min-height:100vh;
+  background: var(--bg);
+  color:var(--text);
+  font-family:Inter, system-ui, sans-serif;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  position: relative; /* necesario para capas */
+}
+
+/* Fondo con imagen (tapa) fija, responsive y con opacidad */
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  background-image: url("./Portada.png"); /* <- cambialo si tu archivo tiene otro nombre */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.30;          /* 30% real */
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* Capa oscura para legibilidad (ajustá 0.45–0.65 si querés) */
+body::after{
+  content:"";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.card{
+  max-width:800px;
+  width:100%;
+  text-align:center;
+  padding:40px;
+  border-radius:16px;
+  border:1px solid var(--glass);
+}
+
+/* Eyebrow superior */
+.eyebrow{
+  margin-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+
+h1{ margin-bottom:12px; }
+
+.lead{ margin-bottom:20px; opacity:.85; }
+
+.meta{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.pill{
+  border:1px solid var(--glass);
+  border-radius:999px;
+  padding:8px 14px;
+}
+
+.contact-button,
+.buy-button,
+.social-link{
+  color:#fff;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.buy-button{
+  font-weight:700;
+}
+
+.social-link.tiktok:hover{ color:#ff0050; }
+.social-link.instagram:hover{ color:#e1306c; }
+
+.footer-note{
+  margin-top:20px;
+  opacity:.6;
+  font-size:13px;
+}
+
+/* CTA secundario inferior */
+.secondary-cta{
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+}
