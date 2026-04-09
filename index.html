@@ -3,86 +3,81 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>En tus límites — Vanesa Puglia</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
+  <title>Vanesa Puglia</title>
+  <meta name="description" content="Sitio de Vanesa Puglia, autora de En tus límites." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
-
 <body>
-  <main class="card">
-      <div class="eyebrow">Sitio en construcción</div>
-      
-    <h1><span class="title-accent">En tus límites, ahora disponible en formato físico en Amazon</span></h1>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
 
-    <p class="lead">
-      Gracias por visitar. Estoy trabajando en un espacio pensado para acompañar el recorrido de <strong>En tus límites</strong> y sus próximas ediciones.
-    </p>
-
-    <div class="meta">
-      <section class="meta-block" aria-labelledby="buy-heading">
-        <h2 id="buy-heading" class="meta-heading">Comprar el libro</h2>
-        <div class="meta-links">
-          <div class="pill">
-            <a class="buy-button"
-               href="https://www.mercadolibre.com.ar/novela-de-romance-contemporanea-en-tus-limites/up/MLAU3704718449"
-               target="_blank"
-               rel="noopener noreferrer">
-              Mercado Libre: Edición a Color
-            </a>
-          </div>
-          <div class="pill">
-            <a class="buy-button"
-               href="https://www.amazon.com/dp/6310121685"
-               target="_blank"
-               rel="noopener noreferrer">
-              Amazon: Edición a Color
-            </a>
-          </div>
-          <div class="pill">
-            <a class="buy-button"
-               href="https://www.amazon.com/dp/B0GVQD2WYT"
-               target="_blank"
-               rel="noopener noreferrer">
-              Amazon: Edición Blanco y Negro
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="meta-block" aria-labelledby="social-heading">
-        <h2 id="social-heading" class="meta-heading">Redes</h2>
-        <div class="meta-links">
-          <div class="pill">
-            <a class="social-link tiktok" href="https://www.tiktok.com/@vanesa.puglia" target="_blank" rel="noopener noreferrer">
-              TikTok
-            </a>
-          </div>
-          <div class="pill">
-            <a class="social-link instagram" href="https://www.instagram.com/vanesa.puglia/" target="_blank" rel="noopener noreferrer">
-              Instagram
-            </a>
-          </div>
-          <div class="pill">
-            <a class="social-link goodreads" href="https://www.goodreads.com/user/show/199660871" target="_blank" rel="noopener noreferrer">
-              Goodreads
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <p class="footer-note">¿Querés que te avise cuando esté disponible en formato digital o en tu país?</p>
-    <div class="secondary-cta">
-      <div class="pill">
-        <a class="contact-button"
-          href="https://forms.gle/yvYBfjpRuuEXZ9K59"
-          target="_blank"
-          rel="noopener noreferrer">
-          Contactame
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="./index.html">Vanesa Puglia</a>
+      <nav class="site-nav" aria-label="Principal">
+        <a href="#yo">YO <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <a href="#redes">MIS REDES <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSemAOVcuaoRsui3juLYAaGSEaoZBNSGPKUialhZ_rOrf4y6Fg/viewform?usp=send_form" target="_blank" rel="noopener noreferrer">CONTACTO <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <a href="./mis-libros.html">MIS LIBROS <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <a class="btn-pill" href="./mis-libros.html#libro">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 6h15l-1.5 9h-12z" />
+            <path d="M6 6 5 3H2" />
+            <circle cx="9" cy="20" r="1" />
+            <circle cx="18" cy="20" r="1" />
+          </svg>
+          COMPRAR EL LIBRO
         </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="home-main">
+    <div class="wrap hero-grid">
+      <div class="hero-visual">
+        <div class="hero-photo">
+          <!-- Reemplazá por tu foto: p. ej. assets/images/autor.jpg -->
+          <img src="./assets/images/placeholder-autor.svg" width="480" height="480" alt="Vanesa Puglia" />
+        </div>
+        <nav id="redes" aria-label="Redes sociales">
+          <ul class="social-list">
+            <li>
+              <a href="https://www.instagram.com/vanesa.puglia/" target="_blank" rel="noopener noreferrer">
+                Instagram <span class="arrow" aria-hidden="true">»</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@vanesa.puglia" target="_blank" rel="noopener noreferrer">
+                TikTok <span class="arrow" aria-hidden="true">»</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.goodreads.com/user/show/199660871" target="_blank" rel="noopener noreferrer">
+                Goodreads <span class="arrow" aria-hidden="true">»</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
+
+      <section class="hero-intro" id="yo" aria-labelledby="hola-heading">
+        <svg class="hero-intro__deco" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+          <path d="M12 48V16l20 12 20-12v32" />
+          <path d="M32 28v24" />
+        </svg>
+        <p class="eyebrow" id="hola-heading">Hola</p>
+        <h1 class="hero-title">—Soy Vane. Bienvenido a mi mundo.</h1>
+        <p class="hero-body">
+          Nací en Quilmes, Argentina, en 1988. Escribo historias para sentir, para cuestionar y para soltar un poco los límites que a veces nos aprietan sin darnos cuenta. Gracias por pasar: acá vas a encontrar mis libros, mis redes y un espacio que sigue creciendo con vos.
+        </p>
+      </section>
     </div>
   </main>
+
+  <footer class="site-footer">
+    <a class="footer-email" href="mailto:vanesapuglia@gmail.com">vanesapuglia@gmail.com</a>
+  </footer>
 </body>
 </html>
