@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vanesa Puglia</title>
-  <meta name="description" content="Sitio de Vanesa Puglia, autora de En tus límites." />
+  <title>Vanesa Puglia — En tus límites</title>
+  <meta name="description" content="Vanesa Puglia y su novela En tus límites: romance contemporáneo, intimidad y emoción. Fragmento, redes y dónde comprar." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 <body>
@@ -15,69 +15,153 @@
 
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="site-logo" href="./index.html">Vanesa Puglia</a>
+      <a class="site-logo" href="./">Vanesa Puglia</a>
       <nav class="site-nav" aria-label="Principal">
-        <a href="#yo">YO <span class="nav-chevron" aria-hidden="true">▾</span></a>
-        <a href="#redes">MIS REDES <span class="nav-chevron" aria-hidden="true">▾</span></a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSemAOVcuaoRsui3juLYAaGSEaoZBNSGPKUialhZ_rOrf4y6Fg/viewform?usp=send_form" target="_blank" rel="noopener noreferrer">CONTACTO <span class="nav-chevron" aria-hidden="true">▾</span></a>
-        <a href="./mis-libros.html">MIS LIBROS <span class="nav-chevron" aria-hidden="true">▾</span></a>
-        <a class="btn-pill" href="./mis-libros.html#libro">
+        <a class="is-active" href="./" aria-current="page">Inicio</a>
+        <a href="./libro/index.html">El libro</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSemAOVcuaoRsui3juLYAaGSEaoZBNSGPKUialhZ_rOrf4y6Fg/viewform?usp=send_form" target="_blank" rel="noopener noreferrer">Contacto</a>
+        <a class="btn-pill" href="./libro/index.html#comprar">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M6 6h15l-1.5 9h-12z" />
             <path d="M6 6 5 3H2" />
             <circle cx="9" cy="20" r="1" />
             <circle cx="18" cy="20" r="1" />
           </svg>
-          COMPRAR EL LIBRO
+          Conseguilo
         </a>
       </nav>
     </div>
   </header>
 
-  <main id="contenido" class="home-main">
-    <div class="wrap hero-grid">
-      <div class="hero-visual">
-        <div class="hero-photo">
-          <!-- Reemplazá por tu foto: p. ej. assets/images/autor.jpg -->
-          <img src="./assets/images/placeholder-autor.svg" width="480" height="480" alt="Vanesa Puglia" />
+  <main id="contenido" class="home-main home-main--landing">
+    <section class="lp-hero wrap" aria-labelledby="hero-heading">
+      <div class="hero-grid">
+        <div class="hero-visual">
+          <div class="hero-photo">
+            <img src="./assets/images/autora-chair.webp" width="960" height="1200" alt="Vanesa Puglia" />
+          </div>
+          
         </div>
-        <nav id="redes" aria-label="Redes sociales">
-          <ul class="social-list">
-            <li>
-              <a href="https://www.instagram.com/vanesa.puglia/" target="_blank" rel="noopener noreferrer">
-                Instagram <span class="arrow" aria-hidden="true">»</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.tiktok.com/@vanesa.puglia" target="_blank" rel="noopener noreferrer">
-                TikTok <span class="arrow" aria-hidden="true">»</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.goodreads.com/user/show/199660871" target="_blank" rel="noopener noreferrer">
-                Goodreads <span class="arrow" aria-hidden="true">»</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
 
-      <section class="hero-intro" id="yo" aria-labelledby="hola-heading">
-        <svg class="hero-intro__deco" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
-          <path d="M12 48V16l20 12 20-12v32" />
-          <path d="M32 28v24" />
-        </svg>
-        <p class="eyebrow" id="hola-heading">Hola</p>
-        <h1 class="hero-title">—Soy Vane. Bienvenido a mi mundo.</h1>
-        <p class="hero-body">
-          Nací en Quilmes, Argentina, en 1988. Escribo historias para sentir, para cuestionar y para soltar un poco los límites que a veces nos aprietan sin darnos cuenta. Gracias por pasar: acá vas a encontrar mis libros, mis redes y un espacio que sigue creciendo con vos.
-        </p>
-      </section>
-    </div>
+        <section class="hero-intro" aria-labelledby="hero-heading">
+          <!-- <div class="hero-intro__deco" aria-hidden="true">
+            <img class="hero-intro__deco-line" src="./assets/images/line-for-book.svg" alt="" />
+            <img class="hero-intro__deco-book" src="./assets/images/book.svg" alt="" />
+          </div> -->
+          <p class="eyebrow" id="hero-heading">Hola</p>
+          <h1 class="hero-title">—Soy Vane. Bienvenido a mi mundo.</h1>
+          <p class="hero-body">
+            (Argentina, 1988)</p>
+          <p class="hero-body">
+            Nací en Quilmes, Buenos Aires.
+            Crecí creyendo que mi lenguaje era el dibujo, hasta que, ya de adulta, descubrí que había una nueva forma de ilustrar: con palabras ♥.
+          <p class="hero-body">
+            Me gustan las historias complejas y crear personajes que no solo se leen, sino que se sienten, y que se quedan con uno incluso mucho después de haber cerrado el libro.</p>
+          <div class="lp-hero__actions">
+            <a class="btn-buy btn-buy--inline" href="#libro-destacado">Descubrí el libro</a>
+            <a class="btn-text" href="./libro/index.html">Conocé más</a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="lp-book-spotlight" id="libro-destacado" aria-labelledby="libro-spotlight-heading">
+      <div class="wrap lp-book-spotlight__inner">
+        <div class="lp-book-spotlight__visual">
+          <div class="lp-book-spotlight__cover">
+            <img src="./assets/images/book-cover.webp" width="420" height="630" alt="Tapa de En tus límites" />
+          </div>
+        </div>
+        <div class="lp-book-spotlight__copy">
+          <p class="eyebrow" id="libro-spotlight-heading">Novela</p>
+          <h2 class="lp-book-spotlight__title">En tus límites</h2>
+          <p class="lp-book-spotlight__hook">
+            Noa tenía la estructura para silenciar el ruido de su pasado.<br />
+            Sienna, el ballet y las fotos para acallar el caos interno.
+          </p>
+          <p class="lp-book-spotlight__hook">
+            Dos personas marcadas.<br />
+            Una mirada que los atraviesa de un modo existencial, y dos historias destinadas a cruzarse para salvarse...<br />
+            O quebrarse por completo.
+          </p>
+          <p class="lp-book-spotlight__micro lp-book-spotlight__quote">
+            "Y por fin, entre todo el mundo, se encontraron.<br />
+            Y ahí, en ellos, todo se detuvo."
+          </p>
+          <a class="btn-buy btn-buy--inline" href="./libro/index.html">Conocé más</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-embeds section-stack" id="en-redes" aria-labelledby="redes-heading">
+      <div class="wrap">
+        <h2 class="section-heading section-heading--center" id="redes-heading">En redes</h2>
+        <div class="embed-grid" role="list">
+          <div class="embed-grid__cell" role="listitem">
+            <p class="embed-grid__label">Instagram</p>
+            <div class="embed-instagram embed-instagram--grid">
+              <blockquote
+                class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DTOItaxj_DJ/"
+                data-instgrm-version="14"
+              >
+                <a href="https://www.instagram.com/reel/DTOItaxj_DJ/?igsh=MWF2NG92aWljZms3bQ==" target="_blank" rel="noopener noreferrer">Ver este reel en Instagram</a>
+              </blockquote>
+            </div>
+          </div>
+          <div class="embed-grid__cell" role="listitem">
+            <p class="embed-grid__label">Instagram</p>
+            <div class="embed-instagram embed-instagram--grid">
+              <blockquote
+                class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DW4uq6Xj3dv/"
+                data-instgrm-version="14"
+              >
+                <a href="https://www.instagram.com/reel/DW4uq6Xj3dv/?igsh=MTRhOGFzMmQ1Nmg4aA==" target="_blank" rel="noopener noreferrer">Ver este reel en Instagram</a>
+              </blockquote>
+            </div>
+          </div>
+          <div class="embed-grid__cell" role="listitem">
+            <p class="embed-grid__label">Instagram</p>
+            <div class="embed-instagram embed-instagram--grid">
+              <blockquote
+                class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DXX7Oxcjf3H/"
+                data-instgrm-version="14"
+              >
+                <a href="https://www.instagram.com/reel/DXX7Oxcjf3H/?igsh=anJ0OWI1YWVncjFl" target="_blank" rel="noopener noreferrer">Ver este reel en Instagram</a>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-cta-final wrap" aria-labelledby="cta-final-heading">
+      <div class="lp-cta-final__panel">
+        <h2 class="lp-cta-final__title" id="cta-final-heading">¿Te quedaste con ganas de más?</h2>
+        <p class="lp-cta-final__text">Llevate la historia a tu mesa de luz. Elegí tu formato y dejá que la página te acompañe un ratito.</p>
+        <div class="lp-cta-final__actions">
+          <a class="btn-buy btn-buy--inline" href="./libro/index.html#comprar">CONSEGUILO</a>
+          <a class="btn-text btn-text--on-dark" href="mailto:vanesapuglia.autora@gmail.com">Escribime</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <a class="footer-email" href="mailto:vanesapuglia@gmail.com">vanesapuglia@gmail.com</a>
+  <footer class="site-footer site-footer--rich">
+    <div class="site-footer__inner wrap">
+      <div class="footer-social" aria-label="Redes">
+        <a href="https://www.instagram.com/vanesa.puglia/" target="_blank" rel="noopener noreferrer"><img src="./assets/images/logo-instagram.svg" width="16" height="16" alt="" aria-hidden="true" />Instagram</a>
+        <span class="footer-dot" aria-hidden="true">·</span>
+        <a href="https://www.tiktok.com/@vanesa.puglia" target="_blank" rel="noopener noreferrer"><img src="./assets/images/logo-tiktok.svg" width="16" height="16" alt="" aria-hidden="true" />TikTok</a>
+        <span class="footer-dot" aria-hidden="true">·</span>
+        <a href="https://www.goodreads.com/user/show/199660871" target="_blank" rel="noopener noreferrer"><img src="./assets/images/logo-goodreads.svg" width="16" height="16" alt="" aria-hidden="true" />Goodreads</a>
+      </div>
+      <a class="footer-email" href="mailto:vanesapuglia.autora@gmail.com">vanesapuglia.autora@gmail.com</a>
+      <p class="footer-legal">© 2026 Vanesa Puglia. Todos los derechos reservados.<br />Queda prohibida la reproducción total o parcial sin autorización previa.</p>
+    </div>
   </footer>
+  <script async src="https://www.instagram.com/embed.js"></script>
 </body>
 </html>
