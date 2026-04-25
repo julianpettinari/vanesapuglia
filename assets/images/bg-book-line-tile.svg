@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Libro abierto en arte lineal; fondo transparente (se ve el --bg del sitio) -->
+  <g opacity="0.55">
+  <path
+    stroke="#ffffff"
+    stroke-width="1.35"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M42 148V58c10-18 38-22 58-10 20-12 48-8 58 10v90M100 48v98M42 148c16-8 34-10 58-6 24-4 42-2 58 6"
+  />
+  </g>
+</svg>

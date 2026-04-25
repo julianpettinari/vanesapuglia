@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <!-- Marca de agua grande: libro abierto, lineas blancas -->
+  <path
+    stroke="#ffffff"
+    stroke-width="1.4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M120 420V180c36-52 118-58 180-28M300 152c62-30 144-24 180 28v240M300 152v268M120 420c58-28 122-34 180-14 58-20 122-14 180 14"
+  />
+</svg>
