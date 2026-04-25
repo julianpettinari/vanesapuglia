@@ -314,7 +314,7 @@ a {
   margin: 0;
   color: var(--muted);
   font-size: 1rem;
-  max-width: 42ch;
+  max-width: none;
   text-align: justify;
 }
 
@@ -758,6 +758,7 @@ a {
   font-style: normal;
   margin: 0 0 14px;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .lp-book-spotlight__micro {
@@ -766,6 +767,7 @@ a {
   font-size: 1.02rem;
   line-height: 1.65;
   max-width: 38ch;
+  text-align: justify;
 }
 
 .lp-book-spotlight__quote {
